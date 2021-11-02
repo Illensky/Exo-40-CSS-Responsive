@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#container {
+    font-size: 2.5rem;
+    width: 80%;
+    margin: auto;
+    background-color: black;
+}
+
+#forty {
+    display: inline-block;
+    width: 40%;
+    background-color: blue;
+}
+
+#twenty1 {
+    display: inline-block;
+    width: 20%;
+    margin: 0 9%;
+    background-color: white;
+}
+
+#twenty2 {
+    display: inline-block;
+    width: 20%;
+    background-color: red;
+}
+
+@media screen and (max-width: 992px){
+    #container {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #forty, #twenty1, #twenty2 {
+        display: block;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 350px){
+    span, a, #twenty2>p {
+        display: none;
+    }
+}
